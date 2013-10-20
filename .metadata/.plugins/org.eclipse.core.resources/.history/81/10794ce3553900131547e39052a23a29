@@ -9,10 +9,7 @@ static Blinker_delay_t delayVal = 1.2 * Blinker_delay_scale; //=1000, delayVal =
 #define FOREVER -1
 static Blinker_count_t curCount = FOREVER;
 static Blinker_delay_t curTime = 0;
-const uint8_t ledArray1[15]={2,9,3,10,4,11,5,12,6,13,7,14,8,15,9};
-static uint8_t ledArray2[15]={2,9,3,10,4,11,5,12,6,13,7,14,8,15,9};
-static uint8_t ledArray3[15]={2,9,3,10,4,11,5,12,6,13,7,14,8,15,9};
-
+static uint8_t ledArray1[15]={2,9,3,10,4,11,5,12,6,13,7,14,8,15,9};
 void main() {
     Hal_init();
     Hal_tickStart(Blinker_delay_step, tickHandler);
@@ -34,11 +31,11 @@ static void tickHandler(void) {
     if (curCount == FOREVER || curCount-- > 0) {
        
         uint8_t i;
-        for(i=0;i<=(delayVal/100)-3;i++)
+        for(i=2;i<=(delayVal/100)-3;i++)
         {
             
-             Hal_User_ledOn(ledArray1[i]);
-             //Hal_delay(10);
+             Hal_User_ledOn(ledArray[i]);
+             Hal_delay(10);
             //Hal_User_ledToggle(i);
             
         }
@@ -46,18 +43,17 @@ static void tickHandler(void) {
         for(i=15;i>=(delayVal/100)-3;i--)
         {
             
-            Hal_User_ledOff(ledArray1[i]);
-            //Hal_delay(10);
+            Hal_User_ledOff(i);
+            Hal_delay(10);
         }
         
       //Hal_ledToggle();
-         
     }
     else {
         cmdVal = Blinker_STOP_CMD;
        // Hal_ledOff();
     }
-        curTime = 0;
+    //curTime = 0;
     Blinker_ledState_indicate();
 }
 

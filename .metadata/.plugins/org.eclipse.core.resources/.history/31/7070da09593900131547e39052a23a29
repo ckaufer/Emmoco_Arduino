@@ -12,7 +12,7 @@ static Blinker_delay_t curTime = 0;
 const uint8_t ledArray1[15]={2,9,3,10,4,11,5,12,6,13,7,14,8,15,9};
 static uint8_t ledArray2[15]={2,9,3,10,4,11,5,12,6,13,7,14,8,15,9};
 static uint8_t ledArray3[15]={2,9,3,10,4,11,5,12,6,13,7,14,8,15,9};
-
+static uint8_t ledArrayXY[15][15];
 void main() {
     Hal_init();
     Hal_tickStart(Blinker_delay_step, tickHandler);
