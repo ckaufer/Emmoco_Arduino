@@ -424,7 +424,7 @@ bool Hal_ledRead(void) {
     return LED13_READ() ? true : false;
 }
 
-void Hal_ledToggle(void) {
+void Hal_ledToggle(ledNum) {
     LED13_TOGGLE();
 }
 

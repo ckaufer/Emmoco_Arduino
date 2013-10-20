@@ -242,6 +242,7 @@ extern void Hal_ledOff(void);
  **/
 extern void Hal_ledOn(void);
 extern void Hal_User_ledOn(uint8_t);
+extern void Hal_User_ledToggle(uint8_t);
 /**
  * --------- Hal_ledRead ---------
  *
@@ -273,7 +274,7 @@ extern bool Hal_ledRead(void);
  *   User LED toggles state.
  *
  **/
-extern void Hal_ledToggle(void);
+extern void Hal_ledToggle();
 /**
  * --------- Hal_tickStart ---------
  *

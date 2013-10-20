@@ -196,21 +196,21 @@ void Hal_debugPulse(uint8_t line) {
 void Hal_delay(uint16_t msecs) {
     while (msecs-- > 0) {
         uint16_t i;
-	    for (i = 0; i < 1000; i++) {
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	    }
-	}
+        for (i = 0; i < 1000; i++) {
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+        }
+    }
 }
 
 void Hal_disconnected(void) {
@@ -293,6 +293,10 @@ void Hal_User_ledOn(uint8_t ledNum)
 {
 switch(ledNum)
 {
+   
+    case 10:
+    LED10_ON();
+    break;
     case 9:
     LED9_ON();
     break;
@@ -354,6 +358,9 @@ void Hal_User_ledOff(uint8_t ledNum)
      case 13:
      LED13_OFF();
      break;
+     case 10:
+     LED10_OFF();
+     break;
      case 11:
      LED11_OFF();
      break;
@@ -368,6 +375,47 @@ void Hal_User_ledOff(uint8_t ledNum)
      break;
     }
 }
+void Hal_User_ledToggle(uint8_t ledNum)
+{
+    switch(ledNum)
+    {
+   case 10:
+   LED10_TOGGLE();
+    case 9:
+    LED9_TOGGLE();
+    break;
+   case 8:
+     LED8_TOGGLE();
+    break;
+    case 7:
+    LED7_TOGGLE();
+    break;
+    case 5:
+    LED5_TOGGLE();
+    break;
+    case 3:
+    LED3_TOGGLE();
+    break;
+    case 6:
+    LED6_TOGGLE();
+    break;
+     case 13:
+     LED13_TOGGLE();
+     break;
+     case 11:
+     LED11_TOGGLE();
+     break;
+     case 12:
+     LED12_TOGGLE();
+     break;
+     case 14:
+     LED14_TOGGLE();
+     break;
+     case 15:
+     LED15_TOGGLE();
+     break;
+    }
+}
 void Hal_ledOff(void) {
     LED13_OFF();
 }
@@ -376,7 +424,7 @@ bool Hal_ledRead(void) {
     return LED13_READ() ? true : false;
 }
 
-void Hal_ledToggle(void) {
+void Hal_ledToggle() {
     LED13_TOGGLE();
 }
 
