@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 /**** DO NOT EDIT -- this file has been automatically generated from @emmoco.com.Blinker on 2013-10-24T15:40:54 ****/
 /**** protocolLevel = 13, toolsVersion = 13.3.13.201310241808 ****/
+=======
+/**** DO NOT EDIT -- this file has been automatically generated from @emmoco.com.Blinker on 2013-10-16T16:43:38 ****/
+/**** protocolLevel = 13, toolsVersion = 13.3.10.201310130338 ****/
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 
 #ifndef Blinker__H
 #define Blinker__H
@@ -62,7 +67,10 @@ void Blinker_disconnect(void);
 void Blinker_pairingOn(uint8_t secs, void(*handler)(void));
 void Blinker_pairingOff(void(*handler)(void));
 void Blinker_reset(void);
+<<<<<<< HEAD
 void Blinker_setDeviceName(const char* name);
+=======
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 void Blinker_start(void);
 
 #ifdef __cplusplus

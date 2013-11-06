@@ -1,4 +1,4 @@
-/**** DO NOT EDIT -- this file has been automatically generated from @emmoco.com.Blinker on 2013-10-24T16:37:35 ****/
+/**** DO NOT EDIT -- this file has been automatically generated from @emmoco.com.Blinker on 2013-11-06T11:22:52 ****/
 /**** protocolLevel = 13, toolsVersion = 13.3.13.201310241808 ****/
 
 #include "Em_Message.h"
@@ -19,7 +19,7 @@ typedef struct Em_App_Message {
 
 const uint8_t Em_App_hash[] = {100, 133, 204, 118, 171, 105, 196, 176, 165, 61, 177, 160, 190, 191, 194, 241, 13, 0, ((sizeof(struct{uint8_t f1; uint16_t f2;}) - sizeof(uint16_t)) << 4) | (sizeof(struct{uint8_t f1; uint32_t f2;}) - sizeof(uint32_t))};
 
-const uint8_t Em_App_build[] = {2, 144, 212, 236, 65, 1, 0, 0};
+const uint8_t Em_App_build[] = {79, 10, 222, 46, 66, 1, 0, 0};
 
 #define Em_App_APP_RESOURCE_COUNT 4
 #define Em_App_SYS_RESOURCE_COUNT 9

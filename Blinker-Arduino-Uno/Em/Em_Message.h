@@ -92,9 +92,12 @@ typedef uint16_t Em_Message_protocolLevel_t;
 /* protocolLevel #11 */
 #define Em_Message_SYS_MCM_DISCONNECT       0xF7
 
+<<<<<<< HEAD
 /* protocolLevel #13a */
 #define Em_Message_SYS_MCM_NAME             0xF5
 
+=======
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 
 /* -------- PRIVATE -------- */
 
@@ -112,9 +115,12 @@ extern uint8_t _Em_Message_txCnt;
 
 static inline bool Em_Message_addByte(uint8_t b) {
     if (_Em_Message_rxCnt == 0) {
+<<<<<<< HEAD
         if (b == 0) {
             return false;
         }
+=======
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
         _Em_Message_rxCnt = b;
     }
     *_Em_Message_rxBuf++ = b;

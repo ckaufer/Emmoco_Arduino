@@ -293,6 +293,13 @@ void Hal_User_ledOn(uint8_t ledNum)
 {
 switch(ledNum)
 {
+<<<<<<< HEAD
+=======
+   
+    case 10:
+    LED10_ON();
+    break;
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
     case 9:
     LED9_ON();
     break;
@@ -354,6 +361,12 @@ void Hal_User_ledOff(uint8_t ledNum)
      case 13:
      LED13_OFF();
      break;
+<<<<<<< HEAD
+=======
+     case 10:
+     LED10_OFF();
+     break;
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
      case 11:
      LED11_OFF();
      break;
@@ -368,6 +381,50 @@ void Hal_User_ledOff(uint8_t ledNum)
      break;
     }
 }
+<<<<<<< HEAD
+=======
+void Hal_User_ledToggle(uint8_t ledNum)
+{
+    switch(ledNum)
+    {
+   case 10:
+   LED10_TOGGLE();
+    case 9:
+    LED9_TOGGLE();
+    break;
+   case 8:
+     LED8_TOGGLE();
+    break;
+    case 7:
+    LED7_TOGGLE();
+    break;
+    case 5:
+    LED5_TOGGLE();
+    break;
+    case 3:
+    LED3_TOGGLE();
+    break;
+    case 6:
+    LED6_TOGGLE();
+    break;
+     case 13:
+     LED13_TOGGLE();
+     break;
+     case 11:
+     LED11_TOGGLE();
+     break;
+     case 12:
+     LED12_TOGGLE();
+     break;
+     case 14:
+     LED14_TOGGLE();
+     break;
+     case 15:
+     LED15_TOGGLE();
+     break;
+    }
+}
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 void Hal_ledOff(void) {
     LED13_OFF();
 }
@@ -376,7 +433,11 @@ bool Hal_ledRead(void) {
     return LED13_READ() ? true : false;
 }
 
+<<<<<<< HEAD
 void Hal_ledToggle(void) {
+=======
+void Hal_ledToggle(ledNum) {
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
     LED13_TOGGLE();
 }
 

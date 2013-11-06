@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 serialPort=COM5
+=======
+serialPort=COM4
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c

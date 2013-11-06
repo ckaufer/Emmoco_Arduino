@@ -1,13 +1,23 @@
 Archive member included because of file (symbol)
 
+<<<<<<< HEAD
 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
                               Output/Blinker-Prog.obj (__do_copy_data)
 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+=======
+c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                              Output/Blinker-Prog.obj (__do_copy_data)
+c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
                               Output/Blinker-Prog.obj (__do_clear_bss)
 
 Allocating common symbols
 Common symbol       size              file
 
+<<<<<<< HEAD
+=======
+ledArray            0xc               Output/Blinker-Prog.obj
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 Em_App_recvIdx      0x1               Output/Blinker.obj
 Em_App_xmitSize     0x1               Output/Blinker.obj
 Em_App_valp         0x2               Output/Blinker.obj
@@ -26,6 +36,10 @@ Discarded input sections
  .text          0x00000000        0x0 Output/Blinker-Prog.obj
  .data          0x00000000        0x0 Output/Blinker-Prog.obj
  .bss           0x00000000        0x0 Output/Blinker-Prog.obj
+<<<<<<< HEAD
+=======
+ COMMON         0x00000000        0x0 Output/Blinker-Prog.obj
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
  .text          0x00000000        0x0 Output/Blinker.obj
  .data          0x00000000        0x0 Output/Blinker.obj
  .bss           0x00000000        0x0 Output/Blinker.obj
@@ -33,8 +47,11 @@ Discarded input sections
                 0x00000000        0x0 Output/Blinker.obj
  .text.Em_App_marshallToVal
                 0x00000000        0x0 Output/Blinker.obj
+<<<<<<< HEAD
  .text.Blinker_setDeviceName
                 0x00000000        0x0 Output/Blinker.obj
+=======
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
  .text.Em_App_xmitReady
                 0x00000000        0x0 Output/Blinker.obj
  .text.Em_App_startIndSend
@@ -64,7 +81,10 @@ Discarded input sections
  .bss           0x00000000        0x0 Output/Hal.obj
  .text.Hal_buttonEnable
                 0x00000000        0x0 Output/Hal.obj
+<<<<<<< HEAD
  .text.loop     0x00000000        0x0 Output/Hal.obj
+=======
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
  .text.Hal_debugOn
                 0x00000000        0x0 Output/Hal.obj
  .text.Hal_debugOff
@@ -81,6 +101,7 @@ Discarded input sections
                 0x00000000        0x0 Output/Hal.obj
  .text.Em_Hal_watchOff
                 0x00000000        0x0 Output/Hal.obj
+<<<<<<< HEAD
  .text          0x00000000        0x0 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
  .data          0x00000000        0x0 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
  .bss           0x00000000        0x0 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
@@ -89,6 +110,16 @@ Discarded input sections
  .data          0x00000000        0x0 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
  .bss           0x00000000        0x0 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc   0x00000000        0x0 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+=======
+ .text          0x00000000        0x0 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 
 Memory Configuration
 
@@ -108,8 +139,13 @@ LOAD ../Platform-Arduino-Uno/Avr/crt0.o
 LOAD Output/Blinker-Prog.obj
 LOAD Output/Blinker.obj
 LOAD Output/Hal.obj
+<<<<<<< HEAD
 LOAD c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
 LOAD c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a
+=======
+LOAD c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
+LOAD c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 
 .hash
  *(.hash)
@@ -204,7 +240,11 @@ LOAD c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\
 xdc.meta
  *(xdc.meta)
 
+<<<<<<< HEAD
 .text           0x00000000      0xba6
+=======
+.text           0x00000000      0xac4
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
  *(.vectors)
  .vectors       0x00000000       0x68 ../Platform-Arduino-Uno/Avr/crt0.o
                 0x00000000                __vectors
@@ -242,9 +282,15 @@ xdc.meta
  *(.init3)
  *(.init3)
  *(.init4)
+<<<<<<< HEAD
  .init4         0x00000074       0x16 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
                 0x00000074                __do_copy_data
  .init4         0x0000008a       0x10 c:/progs/winavr-20100110/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+=======
+ .init4         0x00000074       0x16 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/program files (x86)/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
                 0x0000008a                __do_clear_bss
  *(.init4)
  *(.init5)
@@ -289,6 +335,7 @@ xdc.meta
                 0x000000a2       0x10 Output/Blinker-Prog.obj
                 0x000000a2                Blinker_count_fetch
  .text.Blinker_count_store
+<<<<<<< HEAD
                 0x000000b2       0x20 Output/Blinker-Prog.obj
                 0x000000b2                Blinker_count_store
  .text.Blinker_delay_fetch
@@ -389,6 +436,108 @@ xdc.meta
                 0x00000b10       0x96 Output/Hal.obj
                 0x00000b10                Em_Hal_reset
                 0x00000ba6                . = ALIGN (0x2)
+=======
+                0x000000b2       0x10 Output/Blinker-Prog.obj
+                0x000000b2                Blinker_count_store
+ .text.Blinker_delay_fetch
+                0x000000c2       0x10 Output/Blinker-Prog.obj
+                0x000000c2                Blinker_delay_fetch
+ .text.Blinker_delay_store
+                0x000000d2       0x10 Output/Blinker-Prog.obj
+                0x000000d2                Blinker_delay_store
+ .text.Blinker_ledState_fetch
+                0x000000e2       0x14 Output/Blinker-Prog.obj
+                0x000000e2                Blinker_ledState_fetch
+ .text.Blinker_cmd_store
+                0x000000f6       0x42 Output/Blinker-Prog.obj
+                0x000000f6                Blinker_cmd_store
+ .text.Blinker_disconnectHandler
+                0x00000138        0x6 Output/Blinker-Prog.obj
+                0x00000138                Blinker_disconnectHandler
+ .text.Blinker_connectHandler
+                0x0000013e        0x6 Output/Blinker-Prog.obj
+                0x0000013e                Blinker_connectHandler
+ .text.main     0x00000144       0x1a Output/Blinker-Prog.obj
+                0x00000144                main
+ .text.tickHandler
+                0x0000015e       0x6c Output/Blinker-Prog.obj
+ .text.Em_App_startResSend
+                0x000001ca       0x20 Output/Blinker.obj
+                0x000001ca                Em_App_startResSend
+ .text.Em_App_sendIndicator
+                0x000001ea       0x44 Output/Blinker.obj
+                0x000001ea                Em_App_sendIndicator
+ .text.Em_Message_nextXmit
+                0x0000022e       0x64 Output/Blinker.obj
+                0x0000022e                Em_Message_nextXmit
+ .text.Blinker_start
+                0x00000292       0x54 Output/Blinker.obj
+                0x00000292                Blinker_start
+ .text.Em_App_sysStoreDispatch
+                0x000002e6       0xaa Output/Blinker.obj
+                0x000002e6                Em_App_sysStoreDispatch
+ .text.Em_App_sysFetchDispatch
+                0x00000390      0x12a Output/Blinker.obj
+                0x00000390                Em_App_sysFetchDispatch
+ .text.Em_App_storeDispatch
+                0x000004ba       0xdc Output/Blinker.obj
+                0x000004ba                Em_App_storeDispatch
+ .text.Em_App_fetchDispatch
+                0x00000596       0xc8 Output/Blinker.obj
+                0x00000596                Em_App_fetchDispatch
+ .text.Em_Message_dispatch
+                0x0000065e       0x76 Output/Blinker.obj
+                0x0000065e                Em_Message_dispatch
+ .text.Blinker_ledState_indicate
+                0x000006d4       0x6c Output/Blinker.obj
+                0x000006d4                Blinker_ledState_indicate
+ .text.Hal_connected
+                0x00000740        0x2 Output/Hal.obj
+                0x00000740                Hal_connected
+ .text.Hal_disconnected
+                0x00000742        0x2 Output/Hal.obj
+                0x00000742                Hal_disconnected
+ .text.Hal_init
+                0x00000744       0x78 Output/Hal.obj
+                0x00000744                Hal_init
+ .text.Hal_idleLoop
+                0x000007bc       0x5a Output/Hal.obj
+                0x000007bc                Hal_idleLoop
+ .text.Hal_ledOff
+                0x00000816        0x4 Output/Hal.obj
+                0x00000816                Hal_ledOff
+ .text.Hal_ledRead
+                0x0000081a       0x18 Output/Hal.obj
+                0x0000081a                Hal_ledRead
+ .text.Hal_ledToggle
+                0x00000832        0xa Output/Hal.obj
+                0x00000832                Hal_ledToggle
+ .text.Hal_tickStart
+                0x0000083c       0x3e Output/Hal.obj
+                0x0000083c                Hal_tickStart
+ .text.Em_Hal_lock
+                0x0000087a        0x8 Output/Hal.obj
+                0x0000087a                Em_Hal_lock
+ .text.Em_Hal_startSend
+                0x00000882       0x1c Output/Hal.obj
+                0x00000882                Em_Hal_startSend
+ .text.Em_Hal_unlock
+                0x0000089e        0xc Output/Hal.obj
+                0x0000089e                Em_Hal_unlock
+ .text.__vector_18
+                0x000008aa       0xa4 Output/Hal.obj
+                0x000008aa                __vector_18
+ .text.__vector_11
+                0x0000094e       0x4e Output/Hal.obj
+                0x0000094e                __vector_11
+ .text.__vector_1
+                0x0000099c       0x92 Output/Hal.obj
+                0x0000099c                __vector_1
+ .text.Em_Hal_reset
+                0x00000a2e       0x96 Output/Hal.obj
+                0x00000a2e                Em_Hal_reset
+                0x00000ac4                . = ALIGN (0x2)
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
  *(.fini9)
  *(.fini9)
  *(.fini8)
@@ -409,9 +558,15 @@ xdc.meta
  *(.fini1)
  *(.fini0)
  *(.fini0)
+<<<<<<< HEAD
                 0x00000ba6                _etext = .
 
 .data           0x00800100      0x11c load address 0x00000ba6
+=======
+                0x00000ac4                _etext = .
+
+.data           0x00800100      0x11c load address 0x00000ac4
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
                 0x00800100                PROVIDE (__data_start, .)
                 0x00800200                . = (. + 0x100)
  *fill*         0x00800100      0x100 00
@@ -439,7 +594,11 @@ xdc.meta
                 0x0080021c                _edata = .
                 0x0080021c                PROVIDE (__data_end, .)
 
+<<<<<<< HEAD
 .bss            0x0080021c       0x54 load address 0x00000cc2
+=======
+.bss            0x0080021c       0x52 load address 0x00000be0
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
                 0x0080021c                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
@@ -470,6 +629,7 @@ xdc.meta
  .bss._Em_Message_txCnt
                 0x00800231        0x1 Output/Blinker.obj
                 0x00800231                _Em_Message_txCnt
+<<<<<<< HEAD
  .bss.Em_App_devName
                 0x00800232        0x2 Output/Blinker.obj
                 0x00800232                Em_App_devName
@@ -499,6 +659,34 @@ xdc.meta
                 0x00800270                PROVIDE (__noinit_end, .)
                 0x00800270                _end = .
                 0x00800270                PROVIDE (__heap_start, .)
+=======
+ .bss.handlerEvents
+                0x00800232        0x2 Output/Hal.obj
+ .bss.handlerTab
+                0x00800234        0x6 Output/Hal.obj
+ *(COMMON)
+ COMMON         0x0080023a       0x34 Output/Blinker.obj
+                0x0080023a                Em_App_recvIdx
+                0x0080023b                Em_App_xmitSize
+                0x0080023c                Em_App_valp
+                0x0080023e                Em_App_ind_u
+                0x0080024a                Em_App_recvSize
+                0x0080024b                Em_App_msg_u
+                0x00800267                Em_App_pdHdlr
+                0x00800269                Em_App_bufp
+                0x0080026b                Em_App_xmitIdx
+                0x0080026c                Em_App_desc
+                0x0080026e                PROVIDE (__bss_end, .)
+                0x00000ac4                __data_load_start = LOADADDR (.data)
+                0x00000be0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080026e        0x0
+                0x0080026e                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080026e                PROVIDE (__noinit_end, .)
+                0x0080026e                _end = .
+                0x0080026e                PROVIDE (__heap_start, .)
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -549,11 +737,16 @@ xdc.meta
 .debug_sfnames
  *(.debug_sfnames)
 
+<<<<<<< HEAD
 .debug_aranges  0x00000000      0x220
+=======
+.debug_aranges  0x00000000      0x210
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x68 Output/Blinker-Prog.obj
  .debug_aranges
+<<<<<<< HEAD
                 0x00000068       0xd8 Output/Blinker.obj
  .debug_aranges
                 0x00000140       0xe0 Output/Hal.obj
@@ -607,6 +800,61 @@ xdc.meta
  .debug_loc     0x00000000       0xf0 Output/Blinker-Prog.obj
  .debug_loc     0x000000f0      0x422 Output/Blinker.obj
  .debug_loc     0x00000512       0x49 Output/Hal.obj
+=======
+                0x00000068       0xd0 Output/Blinker.obj
+ .debug_aranges
+                0x00000138       0xd8 Output/Hal.obj
+
+.debug_pubnames
+                0x00000000      0x68b
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xf2 Output/Blinker-Prog.obj
+ .debug_pubnames
+                0x000000f2      0x3d6 Output/Blinker.obj
+ .debug_pubnames
+                0x000004c8      0x1c3 Output/Hal.obj
+
+.debug_info     0x00000000     0x14ec
+ *(.debug_info)
+ .debug_info    0x00000000      0x301 Output/Blinker-Prog.obj
+ .debug_info    0x00000301      0xae6 Output/Blinker.obj
+ .debug_info    0x00000de7      0x705 Output/Hal.obj
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x68d
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xef Output/Blinker-Prog.obj
+ .debug_abbrev  0x000000ef      0x2b8 Output/Blinker.obj
+ .debug_abbrev  0x000003a7      0x2e6 Output/Hal.obj
+
+.debug_line     0x00000000     0x1733
+ *(.debug_line)
+ .debug_line    0x00000000      0x2b0 Output/Blinker-Prog.obj
+ .debug_line    0x000002b0      0xb22 Output/Blinker.obj
+ .debug_line    0x00000dd2      0x961 Output/Hal.obj
+
+.debug_frame    0x00000000      0x3c0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xb0 Output/Blinker-Prog.obj
+ .debug_frame   0x000000b0      0x180 Output/Blinker.obj
+ .debug_frame   0x00000230      0x190 Output/Hal.obj
+
+.debug_str      0x00000000      0x82c
+ *(.debug_str)
+ .debug_str     0x00000000      0x274 Output/Blinker-Prog.obj
+                                0x2b0 (size before relaxing)
+ .debug_str     0x00000274      0x39e Output/Blinker.obj
+                                0x4f0 (size before relaxing)
+ .debug_str     0x00000612      0x21a Output/Hal.obj
+                                0x371 (size before relaxing)
+
+.debug_loc      0x00000000      0x4c3
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xf0 Output/Blinker-Prog.obj
+ .debug_loc     0x000000f0      0x38a Output/Blinker.obj
+ .debug_loc     0x0000047a       0x49 Output/Hal.obj
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -615,7 +863,14 @@ xdc.noload
 OUTPUT(Output/Blinker-Prog.out elf32-avr)
 LOAD linker stubs
 
+<<<<<<< HEAD
 .debug_ranges   0x00000000      0x3c0
  .debug_ranges  0x00000000       0x60 Output/Blinker-Prog.obj
  .debug_ranges  0x00000060      0x1d8 Output/Blinker.obj
  .debug_ranges  0x00000238      0x188 Output/Hal.obj
+=======
+.debug_ranges   0x00000000      0x3e0
+ .debug_ranges  0x00000000       0x60 Output/Blinker-Prog.obj
+ .debug_ranges  0x00000060      0x1d0 Output/Blinker.obj
+ .debug_ranges  0x00000230      0x1b0 Output/Hal.obj
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c

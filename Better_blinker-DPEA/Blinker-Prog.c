@@ -1,20 +1,23 @@
 #include "Blinker.h"
 #include "Hal.h"
+#include "avr/interrupt.h"
+#include "avr/io.h"
 static void tickHandler(void);
 
 static Blinker_cmd_t cmdVal = Blinker_START_CMD;
 static Blinker_count_t countVal = 0;
-static Blinker_delay_t delayVal = 1.2 * Blinker_delay_scale; //=1000, delayVal = 1200
+static Blinker_delay_t delayVal = (1.2 * Blinker_delay_scale)/10; //=1000, delayVal = 1200
 
-#define TICK_RATE (Blinker_delay_step / 5)
+#define TICK_RATE  (Blinker_delay_scale/10)
 
 #define FOREVER -1
 static Blinker_delay_t curTime = 0;
 
-#define MIN_LED_NUM 3
+#define MIN_LED_NUM 2
 #define MAX_LED_NUM 15
 #define LED_NONE 0
 #define LED_ALL 0xFFFF
+#define LED2 (1 << 2)
 #define LED3 (1 << 3)
 #define LED4 (1 << 4)
 #define LED5 (1 << 5)
@@ -22,25 +25,25 @@ static Blinker_delay_t curTime = 0;
 #define LED7 (1 << 7)
 #define LED8 (1 << 8)
 #define LED9 (1 << 9)
-#define LED10 ( 1<< 10 )
+#define LED10 (1 << 10)
 #define LED11 (1 << 11)
 #define LED12 (1 << 12)
 #define LED13 (1 << 13)
 #define LED14 (1 << 14)
 #define LED15 (1 << 15)
 
-#define NUM_PATTERNS 3
-#define PATTERN_LEN 3
+#define NUM_PATTERNS 4
 
 
-const uint16_t ledArray1[PATTERN_LEN]={LED3|LED6, LED4|LED7, LED5|LED7|LED8};
-static uint16_t ledArray2[PATTERN_LEN]={LED8, LED10, LED8|LED10};
-static uint16_t ledArray3[PATTERN_LEN]={LED_ALL, LED_NONE, LED3};
+//static uint16_t ledBitArray[12]={3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5, 0, 1};
+const uint16_t ledArray1[]={LED2|LED15, LED3|LED14, LED4|LED13, LED5|LED12, LED6|LED11, LED7|LED10, LED8|LED9};
+static uint16_t ledArray2[]={LED8, LED10, LED8|LED10};
+static uint16_t ledArray3[]={LED5|LED12|LED11, LED_NONE, LED2|LED4|LED15};
+static uint16_t ledArray4[]={LED_ALL, LED_NONE, LED3};
+static uint16_t curLedIdx;
 
-static uint8_t curLedIdx;
-
-typedef uint8_t* Pattern;
-Pattern patterns[NUM_PATTERNS] = {ledArray1, ledArray2, ledArray3};
+typedef uint16_t* Pattern;
+Pattern patterns[] = {ledArray1, ledArray2, ledArray3, ledArray4};
 static Pattern curPattern = 0;
 
 void main() {
@@ -66,25 +69,21 @@ static void tickHandler(void) {
     }
     else {
         uint16_t mask = curPattern[curLedIdx++];
-        if (curLedIdx == PATTERN_LEN) {
+        if (curLedIdx == NUM_PATTERNS) {
             curLedIdx = 0;
         }
         uint16_t i;
         for (i = MIN_LED_NUM; i <= MAX_LED_NUM; i++) {
-            if (mask & (1 << i)) {
-                Hal_User_ledOn(i);
-            }
-            else {
-                Hal_User_ledOff(i);
-            }
+		    if (mask & (1 << i)) {
+		        Hal_User_ledOn(i);
+		    }
+		    else {
+		        Hal_User_ledOff(i);
+		    }
         }
-    }
-    
-  //Hal_ledToggle();
-         
-   
-   curTime = 0;
-    Blinker_ledState_indicate();
+    }   
+    curTime = 0;
+	Blinker_ledState_indicate();   
 }
 
 /* -------- SCHEMA CALLBACKS -------- */
@@ -107,9 +106,6 @@ void Blinker_cmd_store(Blinker_cmd_t* input) {
             curLedIdx = 0;
             break;
         case Blinker_STOP_CMD:
-            for (i = MIN_LED_NUM; i <= MAX_LED_NUM; i++) {
-                Hal_User_ledOff(i);
-            }
             break;
     }
 }

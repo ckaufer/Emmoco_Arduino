@@ -1,0 +1,594 @@
+Archive member included because of file (symbol)
+
+c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                              Output/FirstApp-Prog.obj (__do_copy_data)
+c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                              Output/FirstApp-Prog.obj (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+ledArray            0xc               Output/FirstApp-Prog.obj
+Em_App_recvIdx      0x1               Output/FirstApp.obj
+Em_App_xmitSize     0x1               Output/FirstApp.obj
+Em_App_valp         0x2               Output/FirstApp.obj
+Em_App_ind_u        0xc               Output/FirstApp.obj
+Em_App_recvSize     0x1               Output/FirstApp.obj
+Em_App_msg_u        0x1c              Output/FirstApp.obj
+Em_App_pdHdlr       0x2               Output/FirstApp.obj
+Em_App_bufp         0x2               Output/FirstApp.obj
+Em_App_xmitIdx      0x1               Output/FirstApp.obj
+Em_App_desc         0x2               Output/FirstApp.obj
+
+Discarded input sections
+
+ .data          0x00000000        0x0 ../Platform-Arduino-Uno/Avr/crt0.o
+ .bss           0x00000000        0x0 ../Platform-Arduino-Uno/Avr/crt0.o
+ .text          0x00000000        0x0 Output/FirstApp-Prog.obj
+ .data          0x00000000        0x0 Output/FirstApp-Prog.obj
+ .bss           0x00000000        0x0 Output/FirstApp-Prog.obj
+ COMMON         0x00000000        0x0 Output/FirstApp-Prog.obj
+ .text          0x00000000        0x0 Output/FirstApp.obj
+ .data          0x00000000        0x0 Output/FirstApp.obj
+ .bss           0x00000000        0x0 Output/FirstApp.obj
+ .text.Em_App_marshallToBuf
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.Em_App_marshallToVal
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.FirstApp_setDeviceName
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.Em_App_sendIndicator
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.Em_App_xmitReady
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.Em_App_startIndSend
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.FirstApp_reset
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.FirstApp_broadcastOff
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.FirstApp_accept
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.FirstApp_activateParameters
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.Em_Message_restart
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.FirstApp_pairingOn
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.FirstApp_disconnect
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.FirstApp_pairingOff
+                0x00000000        0x0 Output/FirstApp.obj
+ .text.Em_App_sendResponse
+                0x00000000        0x0 Output/FirstApp.obj
+ .rodata.Em_App_build
+                0x00000000        0x0 Output/FirstApp.obj
+ .text          0x00000000        0x0 Output/Hal.obj
+ .data          0x00000000        0x0 Output/Hal.obj
+ .bss           0x00000000        0x0 Output/Hal.obj
+ .text.Hal_buttonEnable
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_debugOn
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_debugOff
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_debugPulse
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_delay
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_User_ledOn
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_User_ledOff
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_ledOff
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_ledRead
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_ledToggle
+                0x00000000        0x0 Output/Hal.obj
+ .text.Hal_tickStart
+                0x00000000        0x0 Output/Hal.obj
+ .text.Em_Hal_watchOn
+                0x00000000        0x0 Output/Hal.obj
+ .text.Em_Hal_watchOff
+                0x00000000        0x0 Output/Hal.obj
+ .text          0x00000000        0x0 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD ../Platform-Arduino-Uno/Avr/crt0.o
+LOAD Output/FirstApp-Prog.obj
+LOAD Output/FirstApp.obj
+LOAD Output/Hal.obj
+LOAD c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
+LOAD c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+xdc.meta
+ *(xdc.meta)
+
+.text           0x00000000      0x91a
+ *(.vectors)
+ .vectors       0x00000000       0x68 ../Platform-Arduino-Uno/Avr/crt0.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 ../Platform-Arduino-Uno/Avr/crt0.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc ../Platform-Arduino-Uno/Avr/crt0.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/program files/arduino-1.0.5/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x4 ../Platform-Arduino-Uno/Avr/crt0.o
+ *(.init9)
+ *(.text)
+ .text          0x0000009e        0x4 ../Platform-Arduino-Uno/Avr/crt0.o
+                0x0000009e                __vector_22
+                0x0000009e                __vector_24
+                0x0000009e                __vector_12
+                0x0000009e                __bad_interrupt
+                0x0000009e                __vector_6
+                0x0000009e                __vector_3
+                0x0000009e                __vector_23
+                0x0000009e                __vector_25
+                0x0000009e                __vector_13
+                0x0000009e                __vector_17
+                0x0000009e                __vector_19
+                0x0000009e                __vector_7
+                0x0000009e                __vector_5
+                0x0000009e                __vector_4
+                0x0000009e                __vector_9
+                0x0000009e                __vector_2
+                0x0000009e                __vector_21
+                0x0000009e                __vector_15
+                0x0000009e                __vector_8
+                0x0000009e                __vector_14
+                0x0000009e                __vector_10
+                0x0000009e                __vector_16
+                0x0000009e                __vector_20
+                0x000000a2                . = ALIGN (0x2)
+ *(.text.*)
+ .text.FirstApp_data_fetch
+                0x000000a2       0x10 Output/FirstApp-Prog.obj
+                0x000000a2                FirstApp_data_fetch
+ .text.FirstApp_data_store
+                0x000000b2       0x10 Output/FirstApp-Prog.obj
+                0x000000b2                FirstApp_data_store
+ .text.FirstApp_disconnectHandler
+                0x000000c2        0x6 Output/FirstApp-Prog.obj
+                0x000000c2                FirstApp_disconnectHandler
+ .text.FirstApp_connectHandler
+                0x000000c8        0x6 Output/FirstApp-Prog.obj
+                0x000000c8                FirstApp_connectHandler
+ .text.main     0x000000ce        0xe Output/FirstApp-Prog.obj
+                0x000000ce                main
+ .text.Em_App_startResSend
+                0x000000dc       0x20 Output/FirstApp.obj
+                0x000000dc                Em_App_startResSend
+ .text.Em_Message_nextXmit
+                0x000000fc       0x44 Output/FirstApp.obj
+                0x000000fc                Em_Message_nextXmit
+ .text.FirstApp_start
+                0x00000140       0x54 Output/FirstApp.obj
+                0x00000140                FirstApp_start
+ .text.Em_App_storeDispatch
+                0x00000194       0xa4 Output/FirstApp.obj
+                0x00000194                Em_App_storeDispatch
+ .text.Em_App_fetchDispatch
+                0x00000238       0xa8 Output/FirstApp.obj
+                0x00000238                Em_App_fetchDispatch
+ .text.Em_App_sysStoreDispatch
+                0x000002e0       0xaa Output/FirstApp.obj
+                0x000002e0                Em_App_sysStoreDispatch
+ .text.Em_App_sysFetchDispatch
+                0x0000038a      0x1f4 Output/FirstApp.obj
+                0x0000038a                Em_App_sysFetchDispatch
+ .text.Em_Message_dispatch
+                0x0000057e       0x76 Output/FirstApp.obj
+                0x0000057e                Em_Message_dispatch
+ .text.Hal_connected
+                0x000005f4        0x2 Output/Hal.obj
+                0x000005f4                Hal_connected
+ .text.Hal_disconnected
+                0x000005f6        0x2 Output/Hal.obj
+                0x000005f6                Hal_disconnected
+ .text.Hal_init
+                0x000005f8       0x7a Output/Hal.obj
+                0x000005f8                Hal_init
+ .text.Hal_idleLoop
+                0x00000672       0x5a Output/Hal.obj
+                0x00000672                Hal_idleLoop
+ .text.Em_Hal_lock
+                0x000006cc        0x8 Output/Hal.obj
+                0x000006cc                Em_Hal_lock
+ .text.Em_Hal_startSend
+                0x000006d4       0x1c Output/Hal.obj
+                0x000006d4                Em_Hal_startSend
+ .text.Em_Hal_unlock
+                0x000006f0        0xc Output/Hal.obj
+                0x000006f0                Em_Hal_unlock
+ .text.__vector_18
+                0x000006fc       0xa8 Output/Hal.obj
+                0x000006fc                __vector_18
+ .text.__vector_11
+                0x000007a4       0x4e Output/Hal.obj
+                0x000007a4                __vector_11
+ .text.__vector_1
+                0x000007f2       0x92 Output/Hal.obj
+                0x000007f2                __vector_1
+ .text.Em_Hal_reset
+                0x00000884       0x96 Output/Hal.obj
+                0x00000884                Em_Hal_reset
+                0x0000091a                . = ALIGN (0x2)
+ *(.fini9)
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ *(.fini0)
+                0x0000091a                _etext = .
+
+.data           0x00800100      0x11a load address 0x0000091a
+                0x00800100                PROVIDE (__data_start, .)
+                0x00800200                . = (. + 0x100)
+ *fill*         0x00800100      0x100 00
+                0x00800200                em__stackEnd = .
+ *(.data)
+ *(.data*)
+ .data.dataVal  0x00800200        0x2 Output/FirstApp-Prog.obj
+ .data.Em_App_inBuf
+                0x00800202        0x2 Output/FirstApp.obj
+                0x00800202                Em_App_inBuf
+ *(.rodata)
+ *(.rodata*)
+ .rodata.Em_App_hash
+                0x00800204       0x13 Output/FirstApp.obj
+                0x00800204                Em_App_hash
+ .rodata.Em_App_endian
+                0x00800217        0x2 Output/FirstApp.obj
+                0x00800217                Em_App_endian
+ *(.gnu.linkonce.d*)
+                0x0080021a                . = ALIGN (0x2)
+ *fill*         0x00800219        0x1 00
+                0x0080021a                _edata = .
+                0x0080021a                PROVIDE (__data_end, .)
+
+.bss            0x0080021a       0x4f load address 0x00000a34
+                0x0080021a                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.Em_App_state
+                0x0080021a        0x1 Output/FirstApp.obj
+                0x0080021a                Em_App_state
+ .bss.Em_App_fileIndex
+                0x0080021b        0x4 Output/FirstApp.obj
+                0x0080021b                Em_App_fileIndex
+ .bss.Em_App_xmitMask
+                0x0080021f        0x4 Output/FirstApp.obj
+                0x0080021f                Em_App_xmitMask
+ .bss.Em_App_outBuf
+                0x00800223        0x2 Output/FirstApp.obj
+                0x00800223                Em_App_outBuf
+ .bss._Em_Message_rxBuf
+                0x00800225        0x2 Output/FirstApp.obj
+                0x00800225                _Em_Message_rxBuf
+ .bss._Em_Message_rxCnt
+                0x00800227        0x1 Output/FirstApp.obj
+                0x00800227                _Em_Message_rxCnt
+ .bss._Em_Message_txBuf
+                0x00800228        0x2 Output/FirstApp.obj
+                0x00800228                _Em_Message_txBuf
+ .bss._Em_Message_txCnt
+                0x0080022a        0x1 Output/FirstApp.obj
+                0x0080022a                _Em_Message_txCnt
+ .bss.Em_App_devName
+                0x0080022b        0x2 Output/FirstApp.obj
+                0x0080022b                Em_App_devName
+ .bss.handlerEvents
+                0x0080022d        0x2 Output/Hal.obj
+ .bss.handlerTab
+                0x0080022f        0x6 Output/Hal.obj
+ *(COMMON)
+ COMMON         0x00800235       0x34 Output/FirstApp.obj
+                0x00800235                Em_App_recvIdx
+                0x00800236                Em_App_xmitSize
+                0x00800237                Em_App_valp
+                0x00800239                Em_App_ind_u
+                0x00800245                Em_App_recvSize
+                0x00800246                Em_App_msg_u
+                0x00800262                Em_App_pdHdlr
+                0x00800264                Em_App_bufp
+                0x00800266                Em_App_xmitIdx
+                0x00800267                Em_App_desc
+                0x00800269                PROVIDE (__bss_end, .)
+                0x0000091a                __data_load_start = LOADADDR (.data)
+                0x00000a34                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800269        0x0
+                0x00800269                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800269                PROVIDE (__noinit_end, .)
+                0x00800269                _end = .
+                0x00800269                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1e8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x40 Output/FirstApp-Prog.obj
+ .debug_aranges
+                0x00000040       0xd0 Output/FirstApp.obj
+ .debug_aranges
+                0x00000110       0xd8 Output/Hal.obj
+
+.debug_pubnames
+                0x00000000      0x644
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x93 Output/FirstApp-Prog.obj
+ .debug_pubnames
+                0x00000093      0x3ee Output/FirstApp.obj
+ .debug_pubnames
+                0x00000481      0x1c3 Output/Hal.obj
+
+.debug_info     0x00000000     0x1395
+ *(.debug_info)
+ .debug_info    0x00000000      0x1b6 Output/FirstApp-Prog.obj
+ .debug_info    0x000001b6      0xad2 Output/FirstApp.obj
+ .debug_info    0x00000c88      0x70d Output/Hal.obj
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x692
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xdc Output/FirstApp-Prog.obj
+ .debug_abbrev  0x000000dc      0x2d0 Output/FirstApp.obj
+ .debug_abbrev  0x000003ac      0x2e6 Output/Hal.obj
+
+.debug_line     0x00000000     0x15d7
+ *(.debug_line)
+ .debug_line    0x00000000      0x19e Output/FirstApp-Prog.obj
+ .debug_line    0x0000019e      0xa9c Output/FirstApp.obj
+ .debug_line    0x00000c3a      0x99d Output/Hal.obj
+
+.debug_frame    0x00000000      0x370
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x60 Output/FirstApp-Prog.obj
+ .debug_frame   0x00000060      0x180 Output/FirstApp.obj
+ .debug_frame   0x000001e0      0x190 Output/Hal.obj
+
+.debug_str      0x00000000      0x77f
+ *(.debug_str)
+ .debug_str     0x00000000      0x1a4 Output/FirstApp-Prog.obj
+                                0x1e0 (size before relaxing)
+ .debug_str     0x000001a4      0x3c1 Output/FirstApp.obj
+                                0x50d (size before relaxing)
+ .debug_str     0x00000565      0x21a Output/Hal.obj
+                                0x374 (size before relaxing)
+
+.debug_loc      0x00000000      0x456
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x50 Output/FirstApp-Prog.obj
+ .debug_loc     0x00000050      0x3bd Output/FirstApp.obj
+ .debug_loc     0x0000040d       0x49 Output/Hal.obj
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+xdc.noload
+OUTPUT(Output/FirstApp-Prog.out elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x360
+ .debug_ranges  0x00000000       0x38 Output/FirstApp-Prog.obj
+ .debug_ranges  0x00000038      0x1a8 Output/FirstApp.obj
+ .debug_ranges  0x000001e0      0x180 Output/Hal.obj

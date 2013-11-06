@@ -142,6 +142,7 @@
             194,
             241
         ],
+<<<<<<< HEAD
         "toolVersion": "13.3.13.201310241808",
         "name": "Blinker",
         "$$md5": "6485cc76ab69c4b0a53db1a0bebfc2f1",
@@ -150,12 +151,26 @@
             171,
             160,
             236,
+=======
+        "toolVersion": "13.3.10.201310130338",
+        "name": "Blinker",
+        "$$md5": "6485cc76ab69c4b0a53db1a0bebfc2f1",
+        "build": [
+            99,
+            56,
+            167,
+            195,
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
             65,
             1,
             0,
             0
         ],
+<<<<<<< HEAD
         "date": "2013-10-24T15:40:54",
+=======
+        "date": "2013-10-16T16:43:38",
+>>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
         "maxAlign": 2,
         "maxSize": 20,
         "version": "1.0.0"
