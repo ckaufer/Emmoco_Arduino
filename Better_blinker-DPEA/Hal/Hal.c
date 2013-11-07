@@ -77,6 +77,11 @@
 #define LED5_READ()                  (PORTD & LED5_BIT)
 #define LED5_TOGGLE()                (PORTD ^= LED5_BIT)
 
+#define EAP_RX_ACK_BIT              (1 << 4) //LED 4
+#define EAP_RX_ACK_CONFIG()         (DDRD |= EAP_RX_ACK_BIT)
+#define EAP_RX_ACK_SET()            (PORTD |= EAP_RX_ACK_BIT)
+#define EAP_RX_ACK_CLR()            (PORTD &= ~EAP_RX_ACK_BIT)
+
 #define LED3_BIT                     (1 << 3)
 #define LED3_CONFIG()                (DDRD |= LED3_BIT)
 #define LED3_ON()                    (PORTD |= LED3_BIT)
@@ -91,12 +96,8 @@
 #define LED10_READ()                  (PORTB & LED10_BIT)
 #define LED10_TOGGLE()                (PORTB ^= LED10_BIT)
 
-#define EAP_RX_ACK_BIT              (1 << 4)
-#define EAP_RX_ACK_CONFIG()         (DDRD |= EAP_RX_ACK_BIT)
-#define EAP_RX_ACK_SET()            (PORTD |= EAP_RX_ACK_BIT)
-#define EAP_RX_ACK_CLR()            (PORTD &= ~EAP_RX_ACK_BIT)
 
-#define EAP_TX_ACK_BIT              (1 << 2)
+#define EAP_TX_ACK_BIT              (1 << 2) //interrupt
 #define EAP_TX_ACK_CONFIG()         (DDRD &= ~EAP_TX_ACK_BIT, PORTD |= EAP_TX_ACK_BIT, EICRA |= 0x3) 
 
 #define EAP_RX_BUF                  (UDR0)
@@ -196,21 +197,21 @@ void Hal_debugPulse(uint8_t line) {
 void Hal_delay(uint16_t msecs) {
     while (msecs-- > 0) {
         uint16_t i;
-	    for (i = 0; i < 1000; i++) {
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	        asm("nop");
-	    }
-	}
+        for (i = 0; i < 1000; i++) {
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+            asm("nop");
+        }
+    }
 }
 
 void Hal_disconnected(void) {
@@ -218,49 +219,32 @@ void Hal_disconnected(void) {
 }
 
 void Hal_init() {
-LED13_OFF();LED6_OFF();LED5_OFF();LED7_OFF();LED8_OFF();LED10_OFF();LED3_OFF();LED14_OFF();
-    LED15_OFF();
-DEBUG12_CONFIG(); DEBUG12_OFF();
-    DEBUG11_CONFIG(); DEBUG11_OFF();
-    DEBUG9_CONFIG();  DEBUG9_OFF();
-    DEBUG12_ON(); DEBUG12_OFF();LED10_OFF();
 
-    LED13_CONFIG();
-    LED14_CONFIG();
-    LED6_CONFIG();
-    
-    LED5_CONFIG();
-    
-    LED7_CONFIG();
-    
-    LED8_CONFIG();
-   
-    LED3_CONFIG();
-    
-    
-    
+	LED3_CONFIG();
+	LED5_CONFIG();
+	LED6_CONFIG();
+	LED7_CONFIG();
+	LED8_CONFIG();
+	DEBUG9_CONFIG(); 
+	LED10_CONFIG();
+    DEBUG11_CONFIG(); 
+    DEBUG12_CONFIG();
+	LED13_CONFIG();
+	LED14_CONFIG();
     LED15_CONFIG();
-    LED10_CONFIG();
-    
-    
-    
-    
-    
-
-    
-
-    EAP_TX_ACK_CONFIG();
-    EAP_RX_ACK_CONFIG();
-    EAP_RX_ACK_SET();
-
-    TIMER_CONFIG();
-
-    UBRR0H = (8 >> 8);
-    UBRR0L = 8;
-    UCSR0B |= (1 << RXEN0) | (1 << TXEN0);    // enable receiver and transmitter
-    UCSR0C = ((1 << UCSZ00) | (1 << UCSZ01)); // Set 8 data bits, 1 stop bit, no parity
-
-    handlerTab[DISPATCH_HANDLER_ID] = Em_Message_dispatch;
+	
+	EAP_TX_ACK_CONFIG();
+	EAP_RX_ACK_CONFIG();
+	EAP_RX_ACK_SET();
+	
+	TIMER_CONFIG();
+	
+	UBRR0H = (8 >> 8);
+	UBRR0L = 8;
+	UCSR0B |= (1 << RXEN0) | (1 << TXEN0);    // enable receiver and transmitter
+	UCSR0C = ((1 << UCSZ00) | (1 << UCSZ01)); // Set 8 data bits, 1 stop bit, no parity
+	
+	handlerTab[DISPATCH_HANDLER_ID] = Em_Message_dispatch;
 }
 
 void Hal_idleLoop(void) {
@@ -289,142 +273,154 @@ void Hal_idleLoop(void) {
     }
 }
 
-void Hal_User_ledOn(uint8_t ledNum)
-{
-switch(ledNum)
-{
-<<<<<<< HEAD
-=======
-   
-    case 10:
-    LED10_ON();
-    break;
->>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
-    case 9:
-    LED9_ON();
-    break;
-    case 8:
-    LED8_ON();
-    break;
-    case 7:
-    LED7_ON();
-    break;
-    case 3:
-    LED3_ON();
-    break;
-    case 5:
-    LED5_ON();
-    break;
-    case 6:
-    LED6_ON();
-    break;
-    case 13:
-    LED13_ON();
-    break;
-    case 11:
-    LED11_ON();
-    break;
-    case 12:
-    LED12_ON();
-    break;
-    case 14:
-    LED14_ON();
-    break;
-    case 15:
-    LED15_ON();
-    break;
+void Hal_User_ledOn(uint8_t ledNum) {
     
-}
+	switch(ledNum) {
+        case 2:
+            LED2_ON();
+            break;
+        case 3:
+            LED3_ON();
+            break;
+        case 4:
+            LED4_ON();
+            break;
+        case 5:
+            LED5_ON();
+            break;
+        case 6:
+            LED6_ON();
+            break;
+        case 7:
+            LED7_ON();
+            break;
+        case 8:
+            LED8_ON();
+            break;
+        case 9:
+            LED9_ON();
+            break;
+        case 10:
+            LED10_ON();
+            break;
+        case 11:
+            LED11_ON();
+            break;
+        case 12:
+            LED12_ON();
+            break;
+        case 13:
+            LED13_ON();
+            break;
+        case 14:
+            LED14_ON();
+            break;
+        case 15:
+            LED15_ON();
+            break;
+    
+    }
 }
 void Hal_User_ledOff(uint8_t ledNum)
 {
     switch(ledNum)
     {
-   case 9:
-    LED9_OFF();
-    break;
-   case 8:
-     LED8_OFF();
-    break;
-    case 7:
-    LED7_OFF();
-    break;
-    case 5:
-    LED5_OFF();
-    break;
-    case 3:
-    LED3_OFF();
-    break;
-    case 6:
-    LED6_OFF();
-    break;
-     case 13:
-     LED13_OFF();
-     break;
-<<<<<<< HEAD
-=======
-     case 10:
-     LED10_OFF();
-     break;
->>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
-     case 11:
-     LED11_OFF();
-     break;
-     case 12:
-     LED12_OFF();
-     break;
-     case 14:
-     LED14_OFF();
-     break;
-     case 15:
-     LED15_OFF();
-     break;
+        
+		case 2:
+			LED2_OFF();
+			break;
+		case 3:
+			LED3_OFF();
+			break;
+		case 4:
+            LED4_OFF();
+            break;
+		case 5:
+			LED5_OFF();
+			break;
+		case 6:
+			LED6_OFF();
+			break;
+		case 7:
+			LED7_OFF();
+			break;
+		case 8:
+			LED8_OFF();
+			break;
+		case 9:
+			LED9_OFF();
+			break;
+		case 10:
+			LED10_OFF();
+			break;
+		case 11:
+			LED11_OFF();
+			break;
+		case 12:
+			LED12_OFF();
+			break;
+		case 13:
+			LED13_OFF();
+			break;
+		case 14:
+			LED14_OFF();
+			break;
+		case 15:
+			LED15_OFF();
+			break;
     }
 }
-<<<<<<< HEAD
-=======
+
+
 void Hal_User_ledToggle(uint8_t ledNum)
 {
     switch(ledNum)
     {
-   case 10:
-   LED10_TOGGLE();
-    case 9:
-    LED9_TOGGLE();
-    break;
-   case 8:
-     LED8_TOGGLE();
-    break;
-    case 7:
-    LED7_TOGGLE();
-    break;
-    case 5:
-    LED5_TOGGLE();
-    break;
-    case 3:
-    LED3_TOGGLE();
-    break;
-    case 6:
-    LED6_TOGGLE();
-    break;
-     case 13:
-     LED13_TOGGLE();
-     break;
-     case 11:
-     LED11_TOGGLE();
-     break;
-     case 12:
-     LED12_TOGGLE();
-     break;
-     case 14:
-     LED14_TOGGLE();
-     break;
-     case 15:
-     LED15_TOGGLE();
-     break;
+        case 2:
+            LED2_TOGGLE();
+            break;
+        case 3:
+            LED3_TOGGLE();
+            break;
+        case 4:
+            LED4_TOGGLE();
+            break;
+        case 5:
+            LED5_TOGGLE();
+            break;
+        case 6:
+            LED6_TOGGLE();
+            break;
+        case 7:
+            LED7_TOGGLE();
+            break;
+        case 8:
+            LED8_TOGGLE();
+            break;
+        case 9:
+            LED9_TOGGLE();
+            break;
+        case 10:
+            LED10_TOGGLE();
+            break;
+        case 11:
+            LED11_TOGGLE();
+            break;
+        case 12:
+            LED12_TOGGLE();
+            break;
+        case 13:
+            LED13_TOGGLE();
+            break;
+        case 14:
+            LED14_TOGGLE();
+            break;
+        case 15:
+            LED15_TOGGLE();
+            break;
     }
 }
->>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
+
 void Hal_ledOff(void) {
     LED13_OFF();
 }
@@ -433,11 +429,9 @@ bool Hal_ledRead(void) {
     return LED13_READ() ? true : false;
 }
 
-<<<<<<< HEAD
+
 void Hal_ledToggle(void) {
-=======
-void Hal_ledToggle(ledNum) {
->>>>>>> 59bb4acb443c15e1e073be4e5fdba6f0b1d9c96c
+
     LED13_TOGGLE();
 }
 
